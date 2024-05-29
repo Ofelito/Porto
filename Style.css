@@ -1,0 +1,841 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-collor: black;
+    --seccond-bg-collor:#146C94;
+    --text-collor: #EEEEEE;
+    --main-collor: #787A91;
+    --modal-bg-color: rgba(0, 0, 0, 0.4);
+    --modal-content-bg-color: #fefefe;
+    --modal-content-padding: 20px;
+    --modal-content-border: 1px solid #888;
+    --modal-content-width: 80%;
+    --modal-content-margin: 5% auto;
+    --modal-content-border-radius: 8px;
+    --close-color: #aaa;
+    --close-hover-color: black;
+    --close-font-size: 28px;
+    --close-font-weight: bold;
+    --padding-top: 60px;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-collor);
+    color: var(--text-collor);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-collor);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/* .logo span{
+    text-shadow: 0 0 25px var(--main-collor) ;
+} */
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-collor);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-collor);
+    border-bottom: 3px solid var(--main-collor); 
+}
+
+#menu-icon{
+    font-size:  3.6rem;
+    color: var(--main-collor);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 15rem */
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: var(--main-collor);
+}
+
+.logo span{
+    color: var(--main-collor);
+}
+
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow:  0 0 25 px var(--main-collor);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-collor),
+                0 0 50px var(--main-collor),
+                0 0 10px var(--main-collor);
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    min-width: 1000px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border: 2px solid var(--main-collor);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-collor);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--text-collor);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-collor);
+    background-color: var(--main-collor);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-collor);
+    box-shadow: 0 0 25px var(--main-collor);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-collor);
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.btn-group a:nth-of-type(2){
+    background-color: black;
+    color: var(--main-collor);
+    border: 2px solid var(--main-collor);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--main-collor);
+    background-color: var(--main-collor);
+    color: black;
+}
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: "Web Developer";
+    columns: var(--main-collor);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after{
+    content: "";
+    background-color: var(--bg-collor);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-collor);
+    right: -8px;
+    animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-collor);
+    }
+}
+
+@keyframes words {
+    0%,
+    20%{
+        content: "Fullstack";
+    }
+    21%,
+    40%{
+        content: "Web Developer";
+    }
+    41%,
+    60%{
+        content: "Back End";
+    }
+    61%,
+    80%{
+        content: "Frontend";
+    }
+    81%,
+    100%{
+        content: "Software Tester";
+    }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+.timeline-items {
+    display: flex;
+    flex-wrap: nowrap; /* Jika Anda ingin menghindari wrap saat ada banyak kartu */
+    overflow-x: auto; /* Menambahkan scroll horizontal jika kartu terlalu banyak untuk satu baris */
+}
+
+.card {
+    flex: 0 0 auto; /* Agar kartu tidak menyusut dan tetap dalam ukuran aslinya */
+}
+
+/* Style tambahan untuk memperbaiki tampilan scroll */
+.timeline-items::-webkit-scrollbar {
+    height: 10px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+    color: #000;
+}
+
+.education {
+    padding: 100px 15px;
+    background-color: white;
+    
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    flex: 0 0 auto;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .card__image img {
+    transform: scale(1.2);
+}
+
+.card:hover .card__content {
+    transform: translateY(-100%);
+}
+
+.timeline-items::-webkit-scrollbar {
+    height: 10px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.timeline-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    display: flex; /* Menggunakan Flexbox */
+    background-color: #fefefe;
+    margin: 5% auto;
+    flex-direction: column; /* Menggunakan kolom flex */
+    justify-content: space-between; 
+    /* padding: 20px; */
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.modal-content .modal__image{
+    display: flex;
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.modal-content .modal__image img {
+    width: 100%; /* Atur lebar gambar */
+    height: 100%; /* Pastikan gambar tidak melebihi tinggi konten */ 
+    border-radius: 8px 0px 0px 8px;
+}
+
+.modal-content .modal__desc{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(90% - 80px);
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.modal-content .modal__desc::-webkit-scrollbar {
+    width: 10px;    
+    height: 10px;
+}
+
+.modal-content .modal__desc::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.modal-content .modal__desc::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.modal-content .modal__title{
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.modal-content .modal__text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.close {
+    align-self: flex-start; /* Tempatkan tombol di kiri bawah */
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.close1 {
+    align-self: flex-start; /* Tempatkan tombol di kiri bawah */
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.close2 {
+    align-self: flex-start; /* Tempatkan tombol di kiri bawah */
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.heading_project {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+    color: white;
+}
+
+.project_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.project_modal .modal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 81%;
+    border-radius: 8px;
+    position: relative;
+}
+
+.project_modal .modal__images {
+    align-items: center;
+    justify-content: center; /* Menengahkan secara horizontal */
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Untuk menengahkan modal secara keseluruhan */
+}
+
+.project_modal .modal__images img {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none; /* Sembunyikan semua gambar secara default */
+}
+
+.project_modal .modal__images img.active {
+    display: block; /* Tampilkan gambar yang aktif */
+}
+
+.project_modal .modal__images1 {
+    align-items: center;
+    justify-content: center; /* Menengahkan secara horizontal */
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Untuk menengahkan modal secara keseluruhan */
+}
+
+.project_modal .modal__images1 img {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none; /* Sembunyikan semua gambar secara default */
+}
+
+.project_modal .modal__images1 img.active {
+    display: block; /* Tampilkan gambar yang aktif */
+}
+
+.project_modal .modal__images2 {
+    align-items: center;
+    justify-content: center; /* Menengahkan secara horizontal */
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Untuk menengahkan modal secara keseluruhan */
+}
+
+.project_modal .modal__images2 img {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none; /* Sembunyikan semua gambar secara default */
+}
+
+.project_modal .modal__images2 img.active {
+    display: block; /* Tampilkan gambar yang aktif */
+}
+.project_modal .modal__desc {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.project_modal .modal__content {
+    flex: 1;
+    width: 70%;
+    height: 2000px;
+}
+
+.project_modal .modal__logos {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project_modal .modal__images img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Atur durasi dan jenis transisi yang diinginkan */
+}
+
+.project_modal .modal__images img.active {
+    opacity: 1; /* Tampilkan gambar yang aktif */
+}
+
+.project_modal .modal__images1 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Atur durasi dan jenis transisi yang diinginkan */
+}
+
+.project_modal .modal__images1 img.active {
+    opacity: 1; /* Tampilkan gambar yang aktif */
+}
+
+.project_modal .modal__images2 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Atur durasi dan jenis transisi yang diinginkan */
+}
+
+.project_modal .modal__images2 img.active {
+    opacity: 1; /* Tampilkan gambar yang aktif */
+}
+
+
+.project_modal .modal__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.project_modal .modal__text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.project_modal .close:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+/* Styles for carousel controls */
+.project_modal .prev, .project_modal .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.project_modal .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev:hover, .project_modal .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Styles for carousel controls */
+.project_modal .prev1, .project_modal .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.project_modal .next1 {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev1 {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev1:hover, .project_modal .next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Styles for carousel controls */
+.project_modal .prev2, .project_modal .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.project_modal .next2 {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev2 {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.project_modal .prev2:hover, .project_modal .next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close3 {
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.close4 {
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.close5 {
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
