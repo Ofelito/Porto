@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Theo</title>
+    <link rel="icon" href="amano.png" type="image/x-icon">
+    <title>Theofilus Jirenio Tori</title>
 </head>
 <body>
 
     <header class="header">
-        <a href="#home" class="logo">Theofilus
+        <a href="#home" class="logo ">Theofilus
             <span>Jirenio Tori</span>
         </a>
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -18,12 +19,12 @@
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <!-- <a href="#contact">Contact</a> -->
         </nav>
     </header>
 
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content fade-in">
 
             <h1>Hi,It's <span>Theo</span></h1>
             <h3 class="text-animation">I'm a <span>
@@ -31,19 +32,19 @@
 
             <p>I am a highly committed programmer specializing in the development of innovative and efficient software solutions. My expertise includes PHP, Python, Java, JavaScript, and Kotlin. I have a solid background in designing, developing, and maintaining software solutions, and I excel in collaborative team environments.</p>
 
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bx-envelope' ></i></a>
+            <div class="social-icons fade-in">
+                <a href="https://id.linkedin.com/in/theofilus-jirenio-tori-80b9061b3" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Ofelito" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/lil_hashibira?igsh=amp2cHVoMWR4aDNm" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="mailto:ofelito0301@gmail.com?subject=Job%20Offer%20Inquiry" target="_blank"><i class='bx bx-envelope' ></i></a>
             </div>
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+            <div class="btn-group fade-in">
+                <a href="mailto:ofelito0301@gmail.com?subject=Job%20Offer%20Inquiry" target="_blank" class="btn">Hire</a>
+                <a href="mailto:ofelito0301@gmail.com?subject=Job%20Offer%20Inquiry" target="_blank" class="btn">Contact</a>
             </div>
         </div>
             <div class="home-img">
-                <img src="profile.png" alt="">
+                <img src="image/profile.png" alt="">
             </div>
     </section>
 
@@ -55,7 +56,7 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="ukrim.png" alt="">
+                    <img src="image/ukrim.png" alt="">
                     
                 </div>
                 <div class="card__content">
@@ -67,9 +68,6 @@
 
             <div id="myModal1" class="modal">
                 <div class="modal-content">
-                    <!-- <div class="modal__image">
-                        <img src="smppius.jpg" alt="Gambar Deskripsi">
-                    </div> -->
                     <p class="modal__title">Collage Experience</p>
                     <div class="modal__desc">
                         <p class="modal__text">Throughout my college years, I actively participated in activities that enhanced my coding skills and professional development in the tech industry.
@@ -100,7 +98,7 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="SMAN1Karanganyar.jpg" alt="">
+                    <img src="image/SMAN1Karanganyar.jpg" alt="">
                 </div>
                 <div class="card__content">
                     <p class="card__title">SMA Negri 1 Karanganyar</p>
@@ -140,7 +138,7 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="smppius.jpg" alt="">
+                    <img src="image/smppius.jpg" alt="">
                 </div>
                 <div class="card__content">
                     <p class="card__title">SMP PIUS Bakti Utama Gombong</p>
@@ -192,11 +190,11 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="laundry.png" alt="">
+                    <img src="image/laundry.png" alt="">
                 </div>
                 <div class="card__content">
                     <p class="card__title">Laundry-Hub</p>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card__text">In the Software Engineering course, I developed a Laundry Cashier Application using the Django Framework. This application ...</p>
                     <a class="card__button" href="#desc" id="openModal3">Read More</a>
                 </div>
             </div>
@@ -205,29 +203,42 @@
                 <div class="modal-content">
                     <div class="modal__images">
                         <span class="prev">&#10094;</span>
-                        <img src="project1.png" alt="Image 1" class="active">
-                        <img src="project2.png" alt="Image 2">
-                        <img src="project2.png" alt="Image 3">
+                        <img src="image/login_laundry.png" alt="Image 1" class="active">
+                        <img src="image/Index_laundry.png" alt="Image 2">
                         <!-- Tambahkan gambar sesuai kebutuhan -->
                         <span class="next">&#10095;</span>
                     </div>
                     <p class="modal__title">Laundry-Hub</p>
                     <div class="modal__desc">
                         <div class="modal__content">
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatibus? Itaque aliquam culpa nisi, quos sint repellat cum ex atque obcaecati blanditiis quasi voluptate, explicabo dolor eligendi dicta in ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque dignissimos dicta doloribus cum eligendi voluptates, itaque quo nam adipisci cumque possimus rerum tenetur voluptate blanditiis nisi animi similique saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore vel rerum, <br> <br> <br> mollitia earum ducimus illo sapiente reiciendis qui magnam dolorum nesciunt, unde minus aliquid nemo doloribus atque blanditiis accusamus?</p>
+                            <p class="modal__text">In the Software Engineering course, I developed a comprehensive Laundry Cashier Application using the Django Framework. 
+                                This application, known as Laundry Hub, <br>
+                                encompasses the following key aspects:
+                                <br><br>
+                                <strong>Database Management:</strong> 
+                                <br> Designed and implemented a robust database schema to store cashier data, order details, and generate comprehensive reports.
+                                <br><br>
+                                <strong>
+                                    UI/UX System Design:
+                                </strong> 
+                                <br>Created an intuitive and user-friendly interface to facilitate seamless navigation for users, focusing on usability and aesthetics.
+                                <br><br>
+                                
+                                <strong>
+                                    Backend Development:
+                                </strong><br>
+                                 Implemented backend logic to handle transaction processing, order management, and report generation, ensuring efficient data handling and business logic implementation.
+                                <br> <br>
+                                <strong>
+                                    Frontend Implementation:
+                                </strong><br>
+                                Developed frontend components using Django templates, HTML, CSS, and JavaScript to present data effectively and provide a responsive user experience.
+                                <br><br>
+                                <strong>
+                                    Laundry Hub
+                                </strong>
+                                 serves as a practical application of software engineering principles, integrating backend functionality with a well-designed frontend to meet the operational needs of a laundry business effectively."
+                            </p>
                         </div>
                     </div>
                     <a class="close3">Close</a>
@@ -236,11 +247,11 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="Resto.png" alt="">
+                    <img src="image/Resto.png" alt="">
                 </div>
                 <div class="card__content">
                     <p class="card__title">Resto</p>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card__text">For the Software Development course, I developed a restaurant management system using Django. The system manages custom...</p>
                     <a class="card__button" href="#desc" id="openModal4">Read More</a>
                 </div>
             </div>
@@ -249,16 +260,68 @@
                 <div class="modal-content">
                     <div class="modal__images1">
                         <span class="prev1">&#10094;</span>
-                        <img src="project1.png" alt="Image 1" class="active">
-                        <img src="project2.png" alt="Image 2">
-                        <img src="project2.png" alt="Image 3">
+                        <img src="image/menu_resto.png" alt="Image 1" class="active">
+                        <img src="image/Report_resto.png" alt="Image 2">
+                        <img src="image/login_resto.png" alt="Image 3">
+                        <img src="image/popup_resto.png" alt="Image 4">
                         <!-- Tambahkan gambar sesuai kebutuhan -->
                         <span class="next1">&#10095;</span>
                     </div>
                     <p class="modal__title">Resto</p>
                     <div class="modal__desc">
                         <div class="modal__content">
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini.</p>
+                            <p class="modal__text">
+                                For the Software Development course, I developed a comprehensive restaurant management system using the Django framework. <br> 
+                                This system efficiently handles various aspects of restaurant operations, including: <br> <br>
+
+                                <strong>
+                                    Customer Orders Management:
+                                </strong><br>
+                                Streamlines the process of taking and managing customer orders.
+                                <br><br>
+                                <strong>
+                                    Menu and Ingredient Availability:
+                                </strong> <br>
+                                Ensures that menu items and ingredients are tracked for availability.
+                                <br><br>
+                                <strong>
+                                    Profit Reports:
+                                </strong> <br>
+                                Generates detailed reports on both gross and net profits.
+                                <br><br>
+                                <strong>
+                                    Favorite Menu Items:
+                                </strong> <br>
+                                Identifies and reports on the most popular food and drink items.
+                                <br><br>
+                                <strong>
+                                    Ingredient Availability Reports:
+                                </strong> <br>
+                                Provides real-time updates on ingredient stocks to prevent shortages.
+                                <br><br>
+                                <strong>
+                                    Table Availability Management:
+                                </strong><br>
+                                Manages the reservation and availability of tables. <br> <br>
+                                <strong>
+                                    Key Responsibilities:
+                                </strong> <br><br>
+                                <strong>
+                                    Mockup Research: 
+                                </strong><br>
+                                Conducted thorough research to create mockups that align with user needs and preferences.
+                                <br><br>
+                                <strong>
+                                    UI/UX Design:
+                                </strong>
+                                Designed an intuitive and user-friendly interface to enhance user experience.
+                                <br><br>
+                                <strong>
+                                    Frontend Development:
+                                </strong> <br>
+                                Implemented the frontend of the system, ensuring responsiveness and visual appeal. <br>
+                                This project showcases my ability to develop and manage complex systems, from initial research and design to final implementation, ensuring efficient and effective restaurant operations.
+                            </p>
                         </div>
                     </div>
                     <a class="close4">Close</a>
@@ -267,11 +330,11 @@
 
             <div class="card">
                 <div class="card__image">
-                    <img src="sensasi2.png" alt="">
+                    <img src="image/sensasi2.png" alt="">
                 </div>
                 <div class="card__content">
                     <p class="card__title">Sensasi</p>
-                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="card__text">Sensasi is a scholarship program designed to support students with exceptional skills and achievements, enabling them to pursue a bright...</p>
                     <a class="card__button" href="#desc" id="openModal5">Read More</a>
                 </div>
             </div>  
@@ -280,24 +343,88 @@
                 <div class="modal-content">
                     <div class="modal__images2">
                         <span class="prev2">&#10094;</span>
-                        <img src="project1.png" alt="Image 1" class="active">
-                        <img src="project2.png" alt="Image 2">
-                        <img src="project2.png" alt="Image 3">
+                        <img src="image/project1.png" alt="Image 1" class="active">
+                        <img src="image/project2.png" alt="Image 2">
+                        <img src="image/project2.png" alt="Image 3">
                         <!-- Tambahkan gambar sesuai kebutuhan -->
                         <span class="next2">&#10095;</span>
                     </div>
                     <p class="modal__title">Sensasi</p>
                     <div class="modal__desc">
                         <div class="modal__content">
-                            <p class="modal__text">Deskripsi proyek yang panjang dan informatif dapat ditulis di sini.</p>
+                            <p class="modal__text">
+                                <strong>
+                                    Sensasi
+                                </strong>
+                                 is a scholarship program designed to support students with exceptional skills and 
+                                achievements,enabling them to pursue a brighter future without financial constraints. 
+                                The program collaborates with several major universities, including STTI Papua, STTI Yogya, UGM, ITB, Ukrim, and many more. <br> <br>
+                                <strong>
+                                    Objectives:
+                                </strong><br><br>
+                                <strong>
+                                    Scholarship Provision:
+                                </strong><br>
+                                Offers scholarships to outstanding undergraduate students, particularly those from underdeveloped areas (3T regions).
+                                <br><br>
+                                <strong>
+                                    Skill Development:
+                                </strong> <br> 
+                                Equips students with both soft skills and academic hard skills.
+                                <br><br>
+                                <strong>
+                                    Potential Enhancement:
+                                </strong><br>
+                                Aims to explore, develop, and enhance students' potential through technological advancements.
+                                <br> <br>
+                                <strong>
+                                    Mission:
+                                </strong> <br><br>
+                                Build the competencies of the nation's future generations through education.
+                                <br> <br>
+                                <strong>
+                                    My Role:
+                                </strong><br><br>
+                                I have the opportunity to 
+                                <strong>
+                                </strong>
+                                serve as the IT pillar for Sensasi
+                                , where my responsibilities include maintaining the Sensasi website and developing both its frontend and backend components.
+                                This role allows me to leverage my technical skills to support a meaningful cause, contributing to the education and development of students from underdeveloped regions.
+                            </p>
                         </div>
                     </div>
                     <a class="close5">Close</a>
+                    <a href="https://www.sensasi.org/" target="_blank">
+                        <button >
+                            Visit
+                        </button>
+                    </a>
                 </div>
             </div>
             
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://id.linkedin.com/in/theofilus-jirenio-tori-80b9061b3"target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Ofelito"target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/lil_hashibira?igsh=amp2cHVoMWR4aDNm"target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="mailto:ofelito0301@gmail.com?subject=Job%20Offer%20Inquiry"target="_blank"><i class='bx bx-envelope' ></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="https://www.instagram.com/lil_hashibira?igsh=amp2cHVoMWR4aDNm" target="_blank">FAQ</a>
+            </li>
+            <li>
+                <a href="mailto:ofelito0301@gmail.com?subject=Job%20Offer%20Inquiry" target="_blank">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © Theofilus Jirenio Tori | ALL Rights Reserved
+        </p>
+    </footer>
     
     <script src="Script.js"></script>
 </body>

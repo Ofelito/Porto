@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  
+  // Tambahkan kelas .show ke setiap elemen .fade-in
+  fadeInElements.forEach(element => {
+      element.classList.add('show');
+  });
+});
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -223,3 +233,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }, intervalTime);
 });
 
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if(top >= offset && top < offset + height){
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header nav a [href*=' + id +']').classList.add('active')
+      })
+    }
+  })
+}
+
+menuIcon.onclick = ()=>{
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+} 
+
+document.addEventListener('DOMContentLoaded', function() {
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', function() {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+          // Scroll ke bawah, sembunyikan header
+          header.classList.add('header-hidden');
+      } else {
+          // Scroll ke atas, tampilkan header
+          header.classList.remove('header-hidden');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Menghindari nilai negatif
+  }, false);
+});

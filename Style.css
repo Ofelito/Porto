@@ -49,7 +49,13 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    transition: top 0.3s;
 }
+
+.header-hidden {
+    top: -100px; /* Sesuaikan dengan tinggi header Anda */
+}
+
 .logo{
     font-size: 3rem;
     color: var(--text-collor);
@@ -104,6 +110,7 @@ section{
     flex-direction: column;
     align-items: baseline;
     text-align: left;
+    margin-left: 50px;
     justify-content: center;
     margin-top: 3rem;
 }
@@ -298,6 +305,19 @@ span{
     85%{
         width: calc(100% + 8px);
     }
+}
+
+/* Kelas untuk menyembunyikan elemen awalnya */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Kelas untuk memicu animasi fade-in */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -839,3 +859,261 @@ span{
     text-decoration: none;
     border-radius: 5px;
 }
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #2e2f38 ;    
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--seccond-bg-collor);
+
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: var(--seccond-bg-collor);
+    border: 2px solid var(--seccond-bg-collor);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10);
+    background-color: var(--seccond-bg-collor);
+    color: white;
+    box-shadow: 0 0 25px var(--seccond-bg-collor);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+    border-bottom:3px solid var(--seccond-bg-collor) ;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width:1285px){
+    html{
+        font-size: 55%;
+    }
+    .services-container{
+        padding-bottom:7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+
+    .modal-content, .project_modal .modal-content {
+        width: 90%;
+        height: 80%;
+    }
+
+}
+
+@media(max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .testimonials .wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+
+    .modal-content, .project_modal .modal-content {
+        width: 95%;
+        height: 85%;
+    }
+}
+
+@media(max-width:895px){
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;  /* Default hidden */
+    }
+
+    .navbar.active {
+        display: block;  /* Display when active */
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 6rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p{
+        min-width: 350px;
+        margin: 0 auto;
+    }
+
+    .home-img img{
+        width: 56vw;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .modal-content, .project_modal .modal-content {
+        width: 100%;
+        height: 90%;
+    }
+
+    .project_modal .modal__images {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .project_modal .modal__images img {
+        margin-right: 0;
+    }
+
+    .project_modal .modal__images1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .project_modal .modal__images1 img {
+        margin-right: 0;
+    }
+
+    .project_modal .modal__images2 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .project_modal .modal__images2 img {
+        margin-right: 0;
+    }
+
+
+}
+
+button {
+    font-size: 18px;
+    color: black;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: black;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
