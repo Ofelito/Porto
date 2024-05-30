@@ -7,6 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const pdf1 = "CV_ATL.pdf";
+const pdf2 = "CV_Creative.pdf";
+
+// Condition to choose which file to download
+const condition = true; // Change this condition based on your logic
+
+// Select the download button
+const downloadBtn = document.getElementById("download-btn");
+
+// Set the href attribute based on the condition
+downloadBtn.href = condition ? pdf1 : pdf2;
 
 // Get the modal
 var modal = document.getElementById("myModal");
