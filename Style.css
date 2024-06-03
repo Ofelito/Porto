@@ -110,7 +110,7 @@ section{
     flex-direction: column;
     align-items: baseline;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 100px;
     justify-content: center;
     margin-top: 3rem;
 }
@@ -160,7 +160,7 @@ span{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
-    min-width: 1000px;
+    min-width: 850px;
 }
 
 .social-icons a{
@@ -1017,7 +1017,10 @@ span{
 
     .home{
         flex-direction: column-reverse;
-        margin: 5rem 4rem;
+        margin: 3rem 4rem;
+    }
+    .home-content{
+        margin-left: -5px;
     }
     .home-content h3{
         font-size: 2.6rem;
@@ -1028,7 +1031,7 @@ span{
     }
 
     .home-content p{
-        min-width: 350px;
+        min-width: 320px;
         margin: 0 auto;
     }
 
